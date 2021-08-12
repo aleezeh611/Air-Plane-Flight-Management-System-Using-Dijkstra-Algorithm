@@ -2,10 +2,10 @@
 
 				Group Members:
 				Aleezeh Usman 18i-0529
-				Laiba Imran   18i-0477
 				Areesha Tahir 18i-1655
+				Laiba Imran   18i-0477
 
-				DS FINAL PROJECT : AIRLINE RESERVATION SYSTEM
+				Data Structures FINAL PROJECT : AIRLINE RESERVATION SYSTEM
 				Submission Date: 5-11-19
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -56,6 +56,7 @@ class Graph {
 		}
 		return toReturn;
 	}
+	//reading hotel charges from the file and storing them
 	void read_hotelCharges(string filename)
 	{
 		fstream obj;
@@ -338,6 +339,7 @@ public:
 		delete[] duration;
 		return pathfound;
 	}
+	//Function to check if a transit location is given
 	bool GivenTransit(string src, string trans, string dest, int date, string time, string airline, int trans_time, int cost) {
 		vertex first_flight;
 		int time_duration = 0;
